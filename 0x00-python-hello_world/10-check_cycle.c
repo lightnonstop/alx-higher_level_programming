@@ -12,15 +12,15 @@ int check_cycle(listint_t *list)
 
 	if (list == NULL)
 		return (0);
-	/*
-	 * Moves twice as fast as the list pointer from
-	 * one node to another
-	 */
 	fast = list->next;
 	while (list != NULL && fast != NULL && fast->next != NULL)
 	{
 		if (fast == list)
 			return (1);
+	/*
+	 * Moves twice as fast as the list pointer from
+	 * one node to another
+	 */
 		fast = fast->next->next;
 		list = list->next;
 	}
