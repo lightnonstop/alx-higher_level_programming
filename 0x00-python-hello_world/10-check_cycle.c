@@ -16,7 +16,7 @@ int check_cycle(listint_t *list)
 	 * one node to another
 	 */
 	fast = list->next;
-	while (fast != NULL && fast->next != NULL)
+	while (list != NULL && fast != NULL && fast->next != NULL)
 	{
 		if (fast == list)
 			return (1);
