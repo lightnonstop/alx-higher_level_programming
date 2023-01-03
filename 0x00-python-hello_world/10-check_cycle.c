@@ -11,7 +11,7 @@ int check_cycle(listint_t *list)
 	listint_t *fast;
 
 	fast = malloc(sizeof(listint_t));
-	if (list == NULL || fast || NULL)
+	if (list == NULL || fast == NULL)
 		return (0);
 	/*
 	 * Moves twice as fast as the list pointer from
