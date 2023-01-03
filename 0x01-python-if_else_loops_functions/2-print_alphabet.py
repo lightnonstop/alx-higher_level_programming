@@ -1,5 +1,5 @@
 #!/usr/bin/python3
 alpha = 97
 while alpha <= 122:
-    print(chr(alpha), end="")
+    print("{:c}".format(alpha), end="")
     alpha += 1
