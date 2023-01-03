@@ -12,7 +12,10 @@ int check_cycle(listint_t *list)
 
 	fast = malloc(sizeof(listint_t));
 	if (list == NULL || fast == NULL)
+	{
+		free(fast);
 		return (0);
+	}
 	/*
 	 * Moves twice as fast as the list pointer from
 	 * one node to another
