@@ -10,3 +10,4 @@ def delete_at(my_list=[], idx=0):
             else:
                 continue
     my_list[:] = arr[:]
+    return arr
