@@ -2,4 +2,5 @@
 def print_sorted_dictionary(a_dictionary):
     d = dict(sorted(a_dictionary.items()))
     for i, j in d.items():
-        print(i, ":", j)
+        print(i, end=": ")
+        print(j, end="\n")
